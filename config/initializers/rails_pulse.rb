@@ -137,6 +137,7 @@ RailsPulse.configure do |config|
 
   # Enable/disable authentication (enabled by default in production)
   # config.authentication_enabled = Rails.env.production?
+  config.authentication_enabled = false
 
   # Where to redirect unauthorized users
   # config.authentication_redirect_path = "/"
