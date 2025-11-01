@@ -19,6 +19,7 @@ gem "bootsnap", require: false
 gem "thruster", require: false
 
 gem "rails_pulse"
+gem "sshkit", require: false
 
 group :development, :test do
   # Audits gems for known security defects (use config/bundler-audit.yml to ignore issues)
