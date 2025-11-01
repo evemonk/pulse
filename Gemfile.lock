@@ -278,10 +278,10 @@ DEPENDENCIES
   bundler-audit
   importmap-rails
   jbuilder
-  pg (~> 1.1)
+  pg
   propshaft
-  puma (>= 5.0)
-  rails (~> 8.1.1)
+  puma
+  rails (= 8.1.1)
   rails_pulse
   stimulus-rails
   thruster
