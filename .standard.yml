@@ -1,0 +1,8 @@
+ruby_version: 3.4
+parallel: true
+
+ignore:
+  - "bin/*"
+  - "db/schema.rb"
+  - "db/rails_pulse_schema.rb"
+  - "vendor/**/*"
