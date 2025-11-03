@@ -26,6 +26,7 @@ gem "sshkit", require: false
 group :development, :test do
   gem "bundler-audit", require: false
   gem "brakeman", require: false
+  gem "rspec-rails", ">= 6.0.1"
 end
 
 group :development do
