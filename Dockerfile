@@ -32,6 +32,10 @@ ENV RAILS_ENV="production" \
     BOOTSNAP_READONLY="true" \
     LD_PRELOAD="/usr/local/lib/libjemalloc.so"
 
+RUN set -eux; \
+    gem update --system "3.7.2" ; \
+    gem install bundler --version "2.7.2" --force
+
 # Throw-away build stage to reduce size of final image
 FROM base AS build
 
