@@ -111,3 +111,6 @@ RSpec/ExampleWording:
 
 Style/GuardClause:
   Enabled: false
+
+RSpecRails/InferredSpecType:
+  Enabled: false
