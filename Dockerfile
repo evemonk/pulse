@@ -3,13 +3,14 @@
 
 # This Dockerfile is designed for production, not development. Use with Kamal or build'n'run by hand:
 # docker build -t pulse .
-# docker run -d -p 80:80 -e RAILS_MASTER_KEY=<value from config/master.key> --name pulse pulse
+# docker run -d -p 80:80 --name pulse pulse
 
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version
-ARG RUBY_VERSION=3.4.7
-FROM docker.io/library/ruby:$RUBY_VERSION-slim AS base
+FROM registry.docker.com/library/ruby:3.4.7-slim@sha256:c1734f5d0a502ece7f35658c30168fe85777e21531d7c800386f1514f5207ac8 AS base
+
+LABEL maintainer="Ihor Zubkov <igor.zubkov@gmail.com>"
 
 # Rails app lives here
 WORKDIR /rails
