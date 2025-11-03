@@ -40,3 +40,7 @@ group :development do
   gem "fasterer", require: false
   gem "standard", "1.51.1", require: false
 end
+
+group :test do
+  gem "simplecov", require: false
+end
