@@ -26,6 +26,7 @@ gem "sshkit", require: false
 group :development, :test do
   gem "bundler-audit", require: false
   gem "brakeman", require: false
+  gem "rspec-rails", ">= 6.0.1"
 end
 
 group :development do
@@ -38,4 +39,8 @@ group :development do
   gem "rubocop-rspec_rails", require: false
   gem "fasterer", require: false
   gem "standard", "1.51.1", require: false
+end
+
+group :test do
+  gem "simplecov", require: false
 end
