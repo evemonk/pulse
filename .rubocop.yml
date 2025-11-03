@@ -108,3 +108,6 @@ RSpec/EmptyExampleGroup:
 
 RSpec/ExampleWording:
   Enabled: false
+
+Style/GuardClause:
+  Enabled: false
