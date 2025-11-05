@@ -178,7 +178,9 @@ GEM
     nokogiri (1.18.10-x86_64-linux-musl)
       racc (~> 1.4)
     ostruct (0.6.3)
-    pagy (9.4.0)
+    pagy (43.0.0)
+      json
+      yaml
     parallel (1.27.0)
     parser (3.3.10.0)
       ast (~> 2.4.1)
@@ -233,14 +235,11 @@ GEM
     rails-html-sanitizer (1.6.2)
       loofah (~> 2.21)
       nokogiri (>= 1.15.7, != 1.16.7, != 1.16.6, != 1.16.5, != 1.16.4, != 1.16.3, != 1.16.2, != 1.16.1, != 1.16.0.rc1, != 1.16.0)
-    rails_charts (0.0.9)
-      rails
-    rails_pulse (0.2.3)
+    rails_pulse (0.2.4)
       css-zero (~> 1.1, >= 1.1.4)
       groupdate (~> 6.0)
-      pagy (>= 8, < 10)
+      pagy (>= 8, < 44)
       rails (>= 7.1.0, < 9.0.0)
-      rails_charts (~> 0.0, >= 0.0.6)
       ransack (~> 4.0)
       request_store (~> 1.5)
       turbo-rails (~> 2.0.11)
@@ -381,6 +380,7 @@ GEM
     with_env (1.1.0)
     xml-simple (1.1.9)
       rexml
+    yaml (0.4.0)
     zeitwerk (2.7.3)
 
 PLATFORMS
@@ -494,7 +494,7 @@ CHECKSUMS
   nokogiri (1.18.10-x86_64-linux-gnu) sha256=ff5ba26ba2dbce5c04b9ea200777fd225061d7a3930548806f31db907e500f72
   nokogiri (1.18.10-x86_64-linux-musl) sha256=0651fccf8c2ebbc2475c8b1dfd7ccac3a0a6d09f8a41b72db8c21808cb483385
   ostruct (0.6.3) sha256=95a2ed4a4bd1d190784e666b47b2d3f078e4a9efda2fccf18f84ddc6538ed912
-  pagy (9.4.0) sha256=db3f2e043f684155f18f78be62a81e8d033e39b9f97b1e1a8d12ad38d7bce738
+  pagy (43.0.0) sha256=c052a89dd8b8eeb09dd25604b91557fd94e174dd77aec35ffb015ca9c6f068fd
   parallel (1.27.0) sha256=4ac151e1806b755fb4e2dc2332cbf0e54f2e24ba821ff2d3dcf86bf6dc4ae130
   parser (3.3.10.0) sha256=ce3587fa5cc55a88c4ba5b2b37621b3329aadf5728f9eafa36bbd121462aabd6
   pg (1.6.2) sha256=58614afd405cc9c2c9e15bffe8432e0d6cfc58b722344ad4a47c73a85189c875
@@ -518,8 +518,7 @@ CHECKSUMS
   rails (8.1.1) sha256=877509b7aef309239978685883097d2c03e21383a50a3f78882cf9b3b5c136f7
   rails-dom-testing (2.3.0) sha256=8acc7953a7b911ca44588bf08737bc16719f431a1cc3091a292bca7317925c1d
   rails-html-sanitizer (1.6.2) sha256=35fce2ca8242da8775c83b6ba9c1bcaad6751d9eb73c1abaa8403475ab89a560
-  rails_charts (0.0.9) sha256=65681a6c26899172dd6baa752d5b0d2c6ef37b4844fcd45b8f72402eaf792646
-  rails_pulse (0.2.3) sha256=8bf741f207737b6fc1602bcf0233a5bbccad97133ed8f88e71e72508dab65d62
+  rails_pulse (0.2.4) sha256=ba4cede1f016386acbf7dfe69bfcbeee7b39d6382147dc483c255f062d218ad6
   railties (8.1.1) sha256=fb0c7038b147bea41bf6697fa443ff1c5c47d3bb1eedd9ecf1bceeb90efcb868
   rainbow (3.1.1) sha256=039491aa3a89f42efa1d6dec2fc4e62ede96eb6acd95e52f1ad581182b79bc6a
   rake (13.3.1) sha256=8c9e89d09f66a26a01264e7e3480ec0607f0c497a861ef16063604b1b08eb19c
@@ -574,6 +573,7 @@ CHECKSUMS
   websocket-extensions (0.1.5) sha256=1c6ba63092cda343eb53fc657110c71c754c56484aad42578495227d717a8241
   with_env (1.1.0) sha256=50b3e4f0a6cda8f90d8a6bd87a6261f6c381429abafb161c4c69ad4a0cd0b6e4
   xml-simple (1.1.9) sha256=d21131e519c86f1a5bc2b6d2d57d46e6998e47f18ed249b25cad86433dbd695d
+  yaml (0.4.0) sha256=240e69d1e6ce3584d6085978719a0faa6218ae426e034d8f9b02fb54d3471942
   zeitwerk (2.7.3) sha256=b2e86b4a9b57d26ba68a15230dcc7fe6f040f06831ce64417b0621ad96ba3e85
 
 BUNDLED WITH
