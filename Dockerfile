@@ -8,7 +8,7 @@
 # For a containerized dev environment, see Dev Containers: https://guides.rubyonrails.org/getting_started_with_devcontainer.html
 
 # Make sure RUBY_VERSION matches the Ruby version in .ruby-version
-FROM registry.docker.com/library/ruby:3.4.7-slim@sha256:7eae416d196435b37e1476984df95c5424d1e1ef5e5f0c6d88d2e821bc3891f4 AS base
+FROM registry.docker.com/library/ruby:3.4.7-slim@sha256:fadc980cc9b271292b17af387f6950772cd99d685fe25ecabde59edd6697ad7f AS base
 
 LABEL maintainer="Ihor Zubkov <igor.zubkov@gmail.com>"
 
