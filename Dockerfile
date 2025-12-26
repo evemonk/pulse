@@ -33,8 +33,8 @@ ENV RAILS_ENV="production" \
     LD_PRELOAD="/usr/local/lib/libjemalloc.so"
 
 RUN set -eux ; \
-    gem update --system "4.0.2" ; \
-    gem install bundler --version "4.0.2" --force
+    gem update --system "4.0.3" ; \
+    gem install bundler --version "4.0.3" --force
 
 # Throw-away build stage to reduce size of final image
 FROM base AS build
